@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3DD"
+    tools:context=".Inicio">
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="422dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="300dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_lunav" />
+
+    <TextView
+        android:id="@+id/sloganReco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/inter"
+        android:text="¡No lo botes dale otra vida!"
+        android:textColor="#0F4002"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleReco" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="73dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo5_2" />
+
+    <TextView
+        android:id="@+id/titleReco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter"
+        android:text="RecoPuntos"
+        android:textColor="#0F4002"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btnLoginInicio"
+        style="@style/btnLogin"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="#39932C"
+        android:fontFamily="@font/inter"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00FF9800"
+        android:textColorHint="#3F51B5"
+        android:textColorLink="#11C2DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sloganReco" />
+
+    <Button
+        android:id="@+id/btnRegistroInicio"
+        style="@style/btnRegistro"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#29A3D4"
+        android:fontFamily="@font/inter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginInicio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

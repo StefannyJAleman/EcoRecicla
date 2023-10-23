@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Reto 1 Nivel Intermedio</string>
+    <string name="text_subrayado"><u>Iniciar Sesión</u></string>
+    <string name="text_checkbox">He leído y acepto los <u>Términos y condiciones</u> y <u>Políticas de Privacidad</u></string>
+    <string name="subsignup"><u>Registrarse</u></string>
+    <string name="subrayadoCerrarSesion"><u>Cerrar Sesión</u></string>
+    <string name="editTextTextPassword4">Introduzca Texto Aqui</string>
+    <string name="editTextText2">Introduzca Texto Aqui</string>
+    <string name="title_activity_menu_app">menuscrollcomp</string>
+    <string name="title_inicio">Inicio</string>
+    <string name="title_recoleccion">Recolección</string>
+    <string name="title_recordatorio">Recordatorio</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="fondo_m">fondoM</string>
+    <string name="imgclose">imgclose</string>
+    <string name="h_bienvenida">hola bienvenida</string>
+    <string name="holaB">¡Hola, bienvenidos (as)!</string>
+    <string name="imgreciclaje">img reciclaje</string>
+    <string name="textViewRactiv">En Recopuntos podras realizar diferentes actividades de organización, reutilización,  reciclaje y recolección de puntos para canjearlos por descuentos en productos.</string>
+    <string name="textViewReco">RecoPuntos</string>
+    <string name="textViewDV">¡No lo botes dale otra vida!</string>
+    <string name="imgViewLDV">logoRecoP</string>
+    <string name="imgViewRecoU">imgRecoU</string>
+    <string name="textViewRecoU">Reco_Usuario</string>
+    <string name="imgViewLReco">imgViewLReco</string>
+    <string name="textViewRecopuntos">RecoPuntos</string>
+    <string name="textViewquieres">Escoge que quieres reciclar hoy</string>
+    <string name="imgViewAI">imgAI</string>
+    <string name="textViewAI">Aceite Industrial</string>
+    <string name="imgViewAC"> imgAC</string>
+    <string name="textViewAC"> Aceite de Cocina</string>
+    <string name="imgViewllantas"> imgllantas</string>
+    <string name="textViewllantas">Llantas</string>
+    <string name="imgViewbombillas"> imgbombillas</string>
+    <string name="textViewbombillas">Bombillas</string>
+    <string name="imgViewpyb"> imgpyb</string>
+    <string name="textViewpyb">Pilas y Baterias</string>
+    <string name="imgViewescom">imgescom</string>
+    <string name="textViewescom">Escombros</string>
+    <string name="imgViewdtextiles"> imgdtextiles</string>
+    <string name="textViewdtextiles">Desechos Textiles</string>
+    <string name="imgViewhomeB"> imghomeB</string>
+    <string name="imgViewRecol"> imgRecol</string>
+    <string name="imgViewRecord"> imgRecord</string>
+    <string name="imgViewPerfil">imgPerfil</string>
+
+</resources>

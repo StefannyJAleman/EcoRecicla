@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="btnLogin">
+    <item name="backgroundTint">#39932C</item>
+    <item name="android:layout_width">210dp</item>
+    <item name="android:layout_height">60dp</item>
+    <item name="android:text">Login</item>
+        <item name="fontFamily">Inter</item>
+</style>
+    <style name="btnRegistro">
+        <item name="backgroundTint">#29A3D4</item>
+        <item name="android:layout_width">210dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:text">Sign Up</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="textoFormulario">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <!-- checkbox style for colored checkbox -->
+
+    <style name="colored_checkBox" parent="Theme.AppCompat.Light">
+        <!-- selected checkbox color -->
+        <item name="colorAccent">@android:color/holo_green_dark</item>
+        <!-- default/unselected checkbox color -->
+        <item name="android:textColorSecondary">@android:color/background_light</item>
+    </style>
+
+    <style name="botonesMenu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">start</item>
+        <item name="android:contentDescription">SoyUnaImagenBoton</item>
+    </style>
+
+    <style name="btnPerfilUsuario">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">#39932C</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+</resources>
