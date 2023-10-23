@@ -24,7 +24,7 @@ public class menuscrollcomp extends AppCompatActivity {
 
 
             if (flujoCompletado) {
-                startActivity(new Intent(menuscrollcomp.this, bienvenida.class));
+                startActivity(new Intent(menuscrollcomp.this, com.example.reto2.bienvenida.class));
                 editor.putBoolean("flujoCompletado", false);
                 editor.apply();
             }

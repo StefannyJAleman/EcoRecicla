@@ -37,7 +37,7 @@
             android:name=".Registro"
             android:exported="false" />
         <activity
-            android:name=".Inicio"
+            android:name="com.example.reto2.Inicio"
             android:exported="false" />
 
         <meta-data

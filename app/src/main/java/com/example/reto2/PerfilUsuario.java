@@ -31,7 +31,7 @@ public class PerfilUsuario extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent enviarcerrarSesion = new Intent(PerfilUsuario.this,Inicio.class);
+                Intent enviarcerrarSesion = new Intent(PerfilUsuario.this, Inicio.class);
                 startActivity(enviarcerrarSesion);
             }
         });

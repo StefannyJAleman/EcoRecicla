@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-// Alex Acosta
-
 public class Inicio extends AppCompatActivity {
 
     @Override
@@ -24,14 +22,14 @@ public class Inicio extends AppCompatActivity {
         btnregitrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent paginaRegistro = new Intent(Inicio.this, Registro.class);
+                Intent paginaRegistro = new Intent(Inicio.this, com.example.reto2.Registro.class);
                 startActivity(paginaRegistro);
             }
         });
         btnLoginInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent paginaInicio = new Intent(Inicio.this, IniciarSesion.class);
+                Intent paginaInicio = new Intent(Inicio.this, com.example.reto2.IniciarSesion.class);
                 startActivity(paginaInicio);
             }
         });

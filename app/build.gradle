@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.reto2'
+    namespace 'com.example.retoIntermedio'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.reto2"
+        applicationId "com.example.retoIntermedio"
         minSdk 32
         targetSdk 32
         versionCode 1
