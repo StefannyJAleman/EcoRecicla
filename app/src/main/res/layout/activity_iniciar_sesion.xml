@@ -92,7 +92,8 @@
             android:layout_marginStart="80dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="80dp"
-            android:backgroundTint="#39932C" />
+            android:backgroundTint="#39932C"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/textView8"

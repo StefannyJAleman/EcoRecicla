@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Reto2">
         <activity
-            android:name=".bienvenida"
+            android:name="com.example.reto2.bienvenida"
             android:exported="false" />
         <activity
-            android:name=".Splash"
+            android:name="com.example.reto2.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,17 +24,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PerfilUsuario"
+            android:name="com.example.reto2.PerfilUsuario"
             android:exported="false" />
         <activity
-            android:name=".menuscrollcomp"
+            android:name="com.example.reto2.menuscrollcomp"
             android:exported="false"
             tools:ignore="DuplicateActivity" />
         <activity
-            android:name=".IniciarSesion"
+            android:name="com.example.reto2.IniciarSesion"
             android:exported="false" />
         <activity
-            android:name=".Registro"
+            android:name="com.example.reto2.Registro"
             android:exported="false" />
         <activity
             android:name="com.example.reto2.Inicio"
@@ -44,7 +44,5 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
-
 
 </manifest>

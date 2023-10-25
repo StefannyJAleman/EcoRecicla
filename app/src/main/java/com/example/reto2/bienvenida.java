@@ -1,13 +1,14 @@
 package com.example.reto2;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageView;
-
 import com.example.retoIntermedio.R;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+
 
 public class bienvenida extends AppCompatActivity {
 

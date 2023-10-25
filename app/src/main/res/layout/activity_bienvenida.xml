@@ -7,10 +7,11 @@
     android:background="#F4F3DD"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".bienvenida">
+    tools:context=".bienvenida"
+    tools:ignore="ExtraText">
 
 
-    <ImageView
+   <ImageView
         android:id="@+id/cerrarPopup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

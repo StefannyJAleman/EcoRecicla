@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import com.example.retoIntermedio.R;
-// Stefanny Jaleman
 public class Inicio extends AppCompatActivity {
 
     @Override
@@ -17,8 +16,6 @@ public class Inicio extends AppCompatActivity {
 
         // Crear botones
         // wow
-
-
         Button btnregitrarse=findViewById(R.id.btnRegistroInicio);
         Button btnLoginInicio=findViewById(R.id.btnLoginInicio);
 
