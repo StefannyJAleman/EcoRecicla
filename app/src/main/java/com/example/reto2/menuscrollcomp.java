@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import com.example.retoIntermedio.R;
 
 public class menuscrollcomp extends AppCompatActivity {
 
