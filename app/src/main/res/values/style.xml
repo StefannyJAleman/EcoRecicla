@@ -2,17 +2,17 @@
 <resources>
     <style name="btnLogin">
     <item name="backgroundTint">#39932C</item>
-    <item name="android:layout_width">210dp</item>
-    <item name="android:layout_height">60dp</item>
-    <item name="android:text">Login</item>
-        <item name="fontFamily">Inter</item>
+    <item name="android:layout_width">200dp</item>
+    <item name="android:layout_height">50dp</item>
+    <item name="android:text">Iniciar Sesión</item>
+        <item name="fontFamily">@font/inter_semibold</item>
 </style>
     <style name="btnRegistro">
         <item name="backgroundTint">#29A3D4</item>
-        <item name="android:layout_width">210dp</item>
-        <item name="android:layout_height">60dp</item>
-        <item name="android:text">Sign Up</item>
-        <item name="fontFamily">@font/inter</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:text">Registrarse</item>
+        <item name="fontFamily">@font/inter_semibold</item>
     </style>
 
     <style name="textoFormulario">
@@ -20,6 +20,7 @@
         <item name="android:layout_height">48dp</item>
         <item name="android:ems">10</item>
         <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <!-- checkbox style for colored checkbox -->
@@ -29,6 +30,7 @@
         <item name="colorAccent">@android:color/holo_green_dark</item>
         <!-- default/unselected checkbox color -->
         <item name="android:textColorSecondary">@android:color/background_light</item>
+
     </style>
 
     <style name="botonesMenu">
@@ -42,7 +44,7 @@
 
     <style name="btnPerfilUsuario">
         <item name="android:layout_width">60dp</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">43dp</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_weight">1</item>
         <item name="android:backgroundTint">#39932C</item>

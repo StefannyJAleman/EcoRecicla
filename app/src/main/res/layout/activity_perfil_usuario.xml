@@ -7,24 +7,23 @@
     android:background="#F4F3DD"
     tools:context=".PerfilUsuario">
 
+
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/imageView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/planet5_1" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_62"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="150dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="65dp"
         android:layout_height="75dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/perfil_2" />
@@ -33,26 +32,23 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/inter"
         android:text="Reco_Usuario"
         android:textColor="#39932C"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/cerrarSesion"
-        android:layout_width="41dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_width="39dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_logout_24" />
@@ -62,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="30dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
@@ -81,15 +77,21 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginStart="-50dp"
                 app:srcCompat="@drawable/iconousuario"
                 tools:ignore="ContentDescription" />
 
             <Button
                 android:id="@+id/button"
                 style="@style/btnPerfilUsuario"
+                android:backgroundTint="#4CAE50"
+                android:fontFamily="@font/inter"
                 android:text="Cambiar Usuario"
-                android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textColor="#FEFEFE"
+                android:textSize="15sp"
+                android:layout_marginStart="-50dp"
+                android:layout_marginEnd="30dp"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -101,13 +103,20 @@
             <ImageView
                 android:id="@+id/imageView12"
                 style="@style/btnPerfilUsuario"
-                app:srcCompat="@drawable/iconocorreo" />
+                app:srcCompat="@drawable/group"
+                android:layout_marginStart="-0dp"/>
 
             <Button
                 android:id="@+id/button2"
                 style="@style/btnPerfilUsuario"
-                android:text="Cambiar Correo"
-                android:textSize="16sp" />
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#4CAF50"
+                android:fontFamily="@font/inter"
+                android:text="Reco Estadisticas"
+                android:textSize="15sp"
+                android:layout_marginStart="-10dp"
+                android:layout_marginEnd="30dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -120,14 +129,21 @@
                 android:id="@+id/imageView9"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-
-                app:srcCompat="@drawable/iconocandado" />
+                app:srcCompat="@drawable/iconocandado"
+                android:layout_marginStart="-9dp"
+                android:layout_marginTop="10dp"/>
 
             <Button
                 android:id="@+id/button3"
                 style="@style/btnPerfilUsuario"
+                android:layout_width="240dp"
+                android:backgroundTint="#4CAE50"
+                android:fontFamily="@font/inter"
                 android:text="Cambiar Contraseña"
-                android:textSize="16sp" />
+                android:textSize="15sp"
+                android:layout_marginStart="-30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -139,17 +155,20 @@
             <Button
                 android:id="@+id/button4"
                 style="@style/btnPerfilUsuario"
-                android:layout_width="166dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="110dp"
+                android:layout_marginStart="23dp"
+                android:backgroundTint="#4CAE50"
+                android:fontFamily="@font/inter"
                 android:text="Recibir Notificaciones"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
 
             <ImageView
                 android:id="@+id/imageView13"
-                android:layout_width="10dp"
+                android:layout_width="1dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/icononotificaciones" />
+                app:srcCompat="@drawable/gear__1_"
+                android:layout_marginEnd="10dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -160,13 +179,11 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="62dp"
         android:background="#7DC144"
@@ -179,32 +196,38 @@
 
         <ImageView
             android:id="@+id/Home"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="58dp"
+            android:layout_height="33dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/vector" />
+            android:contentDescription="@string/imgViewhomeB"
+            app:srcCompat="@drawable/vector__3_"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView16"
-            android:layout_width="35dp"
-            android:layout_height="33dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/group_98" />
+            android:layout_width="117dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/imgViewRecol"
+            app:srcCompat="@drawable/group_115"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView15"
-            android:layout_width="40dp"
-            android:layout_height="39dp"
+            android:layout_width="58dp"
+            android:layout_height="33dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/dashicons_bell" />
+            android:contentDescription="@string/imgViewRecord"
+            app:srcCompat="@drawable/fa_solid_calculator__1_"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/iconoPerfilMenu"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="76dp"
+            android:layout_height="49dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/vector_2" />
-
+            android:contentDescription="@string/imgViewPerfil"
+            app:srcCompat="@drawable/vector__5_"
+            tools:ignore="ImageContrastCheck" />
 
     </LinearLayout>
 

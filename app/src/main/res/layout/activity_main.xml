@@ -12,33 +12,21 @@
         android:id="@+id/imageView8"
         android:layout_width="422dp"
         android:layout_height="480dp"
-        android:layout_marginTop="300dp"
         android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/vector_lunav" />
-
-    <TextView
-        android:id="@+id/sloganReco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:fontFamily="@font/inter"
-        android:text="¡No lo botes dale otra vida!"
-        android:textColor="#0F4002"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleReco" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="73dp"
         android:layout_height="136dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="108dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo5_2" />
@@ -47,40 +35,53 @@
         android:id="@+id/titleReco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/inter"
         android:text="RecoPuntos"
         android:textColor="#0F4002"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
-    <Button
-        android:id="@+id/btnLoginInicio"
-        style="@style/btnLogin"
-        android:layout_marginTop="156dp"
-        android:backgroundTint="#39932C"
+    <TextView
+        android:id="@+id/sloganReco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/inter"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#00FF9800"
-        android:textColorHint="#3F51B5"
-        android:textColorLink="#11C2DA"
+        android:text="¡No lo botes dale otra vida!"
+        android:textColor="#0F4002"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sloganReco" />
+        app:layout_constraintTop_toBottomOf="@+id/titleReco" />
 
     <Button
         android:id="@+id/btnRegistroInicio"
         style="@style/btnRegistro"
         android:layout_marginTop="8dp"
         android:backgroundTint="#29A3D4"
-        android:fontFamily="@font/inter"
+        android:fontFamily="@font/inter_semibold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLoginInicio" />
+
+    <Button
+        android:id="@+id/btnLoginInicio"
+        style="@style/btnLogin"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#39932C"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00FF9800"
+        android:textColorHint="#3F51B5"
+        android:textColorLink="#11C2DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sloganReco" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

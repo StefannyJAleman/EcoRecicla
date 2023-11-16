@@ -8,7 +8,6 @@
     android:background="#F4F3DD"
     tools:context=".menuscrollcomp">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="65dp"
@@ -407,8 +406,8 @@
 
         <ImageView
             android:id="@+id/Home"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="76dp"
+            android:layout_height="49dp"
             android:layout_weight="1"
             android:contentDescription="@string/imgViewhomeB"
             app:srcCompat="@drawable/vector"
@@ -416,26 +415,25 @@
 
         <ImageView
             android:id="@+id/imageView16"
-            android:layout_width="35dp"
-            android:layout_height="33dp"
-            android:layout_weight="1"
+            android:layout_width="117dp"
+            android:layout_height="35dp"
             android:contentDescription="@string/imgViewRecol"
-            app:srcCompat="@drawable/group_98"
+            app:srcCompat="@drawable/group_115"
             tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView15"
-            android:layout_width="40dp"
-            android:layout_height="39dp"
+            android:layout_width="58dp"
+            android:layout_height="33dp"
             android:layout_weight="1"
             android:contentDescription="@string/imgViewRecord"
-            app:srcCompat="@drawable/dashicons_bell"
+            app:srcCompat="@drawable/fa_solid_calculator__1_"
             tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/iconoPerfilMenu"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="58dp"
+            android:layout_height="33dp"
             android:layout_weight="1"
             android:contentDescription="@string/imgViewPerfil"
             app:srcCompat="@drawable/vector_2"

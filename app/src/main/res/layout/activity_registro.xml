@@ -7,6 +7,7 @@
     android:background="#F4F3DD"
     tools:context=".Registro">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,8 +29,8 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/img_20230805_174031_168___copia_removebg_preview" />
 
@@ -37,10 +38,12 @@
                 android:id="@+id/textView"
                 android:layout_width="180dp"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/merriweather_sans"
                 android:gravity="center"
                 android:text="Crear Cuenta"
                 android:textColor="#0F4002"
-                android:textSize="20sp" />
+                android:textSize="18sp"
+                android:layout_marginRight="50dp"/>
 
         </LinearLayout>
 
@@ -69,43 +72,86 @@
             android:inputType="textPassword" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBox2"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="#673AB7"
-            android:checked="true"
-            android:drawableTint="#FFC107"
+            android:layout_height="wrap_content"
             android:text="@string/text_checkbox"
-            android:textColorLink="#673AB7"
-            android:buttonTint="@drawable/checkbox_custom_selector" />
-
+            android:layout_marginTop="10dp"/>
 
         <Button
             android:id="@+id/btnRegistro"
             style="@style/btnRegistro"
             android:layout_marginTop="40dp"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="195dp"
+            android:src="@drawable/line_10" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="195dp"
+            android:src="@drawable/line_9" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O inicia sesión con"
+            android:gravity="center"
+            android:textColor="#0F4002"
+            android:layout_marginTop="-13dp"/>
+
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group_105__4_" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="-50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group_107__4_" />
+
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="45dp"
             android:gravity="center"
             android:text="¿Ya eres miembro?"
-            android:textColor="#39932C" />
+            android:textColor="#39932C"
+            android:layout_marginEnd="90dp"/>
 
         <TextView
             android:id="@+id/enviarIniciarSesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/inter_semibold"
             android:gravity="center"
             android:text="@string/text_subrayado"
             android:textColor="#39932C"
-            android:textIsSelectable="false"/>
+            android:textIsSelectable="false" />
 
 
 

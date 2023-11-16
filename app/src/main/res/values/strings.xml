@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Reto 1 Nivel Intermedio</string>
-    <string name="text_subrayado"><u>Iniciar Sesión</u></string>
+    <string name="text_subrayado">Iniciar Sesión</string>
     <string name="text_checkbox">He leído y acepto los <u>Términos y condiciones</u> y <u>Políticas de Privacidad</u></string>
-    <string name="subsignup"><u>Registrarse</u></string>
+    <string name="subsignup">Registrarse</string>
     <string name="subrayadoCerrarSesion"><u>Cerrar Sesión</u></string>
     <string name="editTextTextPassword4">Introduzca Texto Aqui</string>
     <string name="editTextText2">Introduzca Texto Aqui</string>
