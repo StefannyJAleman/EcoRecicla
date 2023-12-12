@@ -7,9 +7,50 @@
     android:background="#F4F3DD"
     tools:context=".IniciarSesion">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="93dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/perfil_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/merriweather_sans_bold"
+        android:text="¡Hola, bienvenido de nuevo!"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Iniciar Sesión"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="490dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,71 +60,73 @@
         app:layout_constraintVertical_bias="0.515"
         tools:ignore="ExtraText">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:fontFamily="@font/merriweather_sans"
-            android:text="Iniciar Sesión"
-            android:textSize="16sp" />
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="40dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
 
 
-            <EditText
-                android:id="@+id/editTextText2"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="Usuario/Correo"
-                android:inputType="text"
-                android:textColorHint="#4D091B19"
-                android:textSize="14sp" />
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/ext_name"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:hint="Ingrese su cedula">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
 
-            <EditText
-                android:id="@+id/editTextTextPassword4"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:textColorHint="#4D091B19"
-                android:textSize="14sp" />
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/ext_password"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:hint="Ingrese su contraseña"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="177dp"
-            android:text="¿Has olvidado tu contraseña?"
-            android:textSize="13sp" />
 
         <Button
             android:id="@+id/btnLogin"
             style="@style/btnLogin"
             android:layout_gravity="center"
             android:layout_marginStart="80dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="80dp"
             android:backgroundTint="#39932C" />
 
@@ -91,8 +134,8 @@
             android:id="@+id/imageView24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:layout_marginLeft="195dp"
+            android:layout_marginTop="40dp"
             android:src="@drawable/line_10" />
 
         <ImageView
@@ -108,10 +151,10 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="O inicia sesión con"
+            android:layout_marginTop="-13dp"
             android:gravity="center"
-            android:textColor="#0F4002"
-            android:layout_marginTop="-13dp"/>
+            android:text="O inicia sesión con"
+            android:textColor="#0F4002" />
 
 
         <ImageButton
@@ -136,8 +179,8 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
             android:layout_marginStart="102dp"
+            android:layout_marginTop="30dp"
             android:text="¿No tienes cuenta?"
             android:textColor="#39932C"
             android:textIsSelectable="false" />
@@ -155,28 +198,7 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="93dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="72dp"
-        android:src="@drawable/perfil_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:fontFamily="@font/merriweather_sans"
-        android:text="¡Hola, bienvenido de nuevo!"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,31 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="checkbox_checked">#2AB514</color> <!-- CheckBox activado -->
+    <color name="checkbox_checked">#2AB514</color>
+
+//barra de navegación//
+
+    <color name="backg">#7DC144</color>
+    <color name="inner">#39932C</color>
+
+    //Dropdown//
+
+    <color name="fondoin">#F9F8EE</color>
+    <color name="customBackgroundColor">#FAE8B4</color>
+    <color name="customItemBackgroundColor">#F9F8EE</color>
+    <color name="customOutlineColor">#000000</color>
+
+    <color name="colorFondo">#F9F8EE</color>
+    <color name="colorBorde">#808080</color>
+
+    <color name="colorFondoValorkg">#F9F8EE</color>
+    <color name="colorBordeValorkg">#808080</color>
+
+    <color name="elijmat">#318D4A</color>
+    <color name="captfech">#318D4A</color>
+
+
+    //popUp//
+    <color name="popupreco">#FAF8DF</color>
 
 </resources>

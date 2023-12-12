@@ -14,8 +14,6 @@ public class Inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Crear botones
-        // wow
         Button btnregitrarse=findViewById(R.id.btnRegistroInicio);
         Button btnLoginInicio=findViewById(R.id.btnLoginInicio);
 

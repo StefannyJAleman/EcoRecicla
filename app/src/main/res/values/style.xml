@@ -49,6 +49,49 @@
         <item name="android:layout_weight">1</item>
         <item name="android:backgroundTint">#39932C</item>
         <item name="android:textSize">15dp</item>
+
     </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+    </style>
+
+    <style name="ExposedDropdownMenuStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+    </style>
+
+    <style name="MyBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/inner</item>
+    </style>
+
+    <style name="btnShare">
+        <item name="android:background">@drawable/formashape</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:text">Iniciar Sesión</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="EstiloTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/colorFondo</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+
+
+
+    </style>
+
+
+    <style name="EstiloTextInputLayoutValorlt" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/colorFondoValorkg</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+
+    </style>
+
+
 
 </resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3DD"
+    tools:context="com.example.reto2.recoestadisticas">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/estadis" />
+
+    <TextView
+        android:id="@+id/textesta"
+        android:layout_width="395dp"
+        android:layout_height="82dp"
+        android:background="#BBE39A"
+        android:fontFamily="@font/merriweather_sans_bold"
+        android:paddingTop="30dp"
+        android:text="Reco Estadisticas"
+        android:textAlignment="center"
+        android:textColor="#265144"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/Retroceder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="395dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textesta">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAI"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#39932C"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Aceite Industrial"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Aceite de Cocina"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnBom"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Bombillas"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnLlantas"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Llantas"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnPilBat"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Pilas y Baterias"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnEscombros"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Escombros"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnDesTex"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Desechos Textiles"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/barnav"
+        style="@style/MyBottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backg"
+        app:itemIconTint="@drawable/fientecbarra"
+        app:itemTextColor="@drawable/fientecbarra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bar" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

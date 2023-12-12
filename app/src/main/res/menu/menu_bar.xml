@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+
+        android:id="@+id/home"
+        android:icon="@drawable/vector_inicio"
+        android:title="@string/title_inicio"/>
+
+    <item
+
+        android:id="@+id/puntos"
+        android:icon="@drawable/vector_puntosacopio"
+        android:title="Puntos Acopio"/>
+
+    <item
+
+        android:id="@+id/calcular"
+        android:icon="@drawable/vector_recocalcular"
+        android:title="Reco Calcular"/>
+
+    <item
+
+        android:id="@+id/perfil"
+        android:icon="@drawable/vector_perfil"
+        android:title="Perfil"/>
+
+</menu>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3DD"
+    tools:context="com.example.reto2.recoconsejos">
+
+    <TextView
+        android:id="@+id/textesta"
+        android:layout_width="395dp"
+        android:layout_height="82dp"
+        android:background="#BBE39A"
+        android:fontFamily="@font/merriweather_sans_bold"
+        android:paddingTop="30dp"
+        android:text="Reconsejos"
+        android:textAlignment="center"
+        android:textColor="#265144"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/Retroceder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_left_24" />
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/barnav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="#FAF8DF"
+          >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="325.7dp"
+                android:layout_height="172.43dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="39dp"
+                app:cardElevation="5dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="326dp"
+                    android:layout_height="match_parent"
+                    android:background="#E6EFD4"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+
+
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweather_sans_bold"
+                        android:text="Consejo 1"
+                        android:textColor="#39932C"
+                        android:textSize="16sp" />
+
+                    <TextView
+
+
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/merriweather_sans_bold"
+                        android:text="Comparte tu experiencia:"
+                        android:textColor="#141713"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+
+                        android:layout_width="270dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="-10dp"
+                        android:fontFamily="@font/merriweather_sans_light"
+                        android:text="Comparte tu experiencia y éxito en reciclar aceite industrial con amigos, familiares y colegas. Puedes inspirar a otros a seguir tu ejemplo."
+                        android:textColor="#141713"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="325.7dp"
+                android:layout_height="172.43dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="39dp"
+                app:cardElevation="5dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="326dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardestre"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+
+                        android:id="@+id/textViewAIb"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweather_sans_bold"
+                        android:text="Consejo 2"
+                        android:textColor="#39932C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="-5dp"
+                        android:fontFamily="@font/merriweather_sans_bold"
+                        android:text="Recompensa: Gracias por ser un héroe del reciclaje de aceite industrial."
+                        android:textColor="#141713"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+
+                        android:fontFamily="@font/merriweather_sans_light"
+                        android:text="Te premiamos con un descuento del 15% en Utensilios de Cocina Sostenibles de Ekoideas. ¡Esperamos que disfrutes de esta recompensa por tu compromiso!"
+                        android:textColor="#141713"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="325.7dp"
+                android:layout_height="172.43dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="39dp"
+                app:cardElevation="5dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="326dp"
+                    android:layout_height="match_parent"
+                    android:background="#E6EFD4"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+
+                        android:id="@+id/textViewAIc"
+                        android:layout_width="260dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweather_sans_bold"
+                        android:text="Consejo 3"
+                        android:textColor="#39932C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="-20dp"
+                        android:fontFamily="@font/merriweather_sans_bold"
+                        android:text="Meta: Aumentar la Cantidad de Reciclaje en un 20%:"
+                        android:textColor="#141713"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/merriweather_sans_light"
+                        android:text="Considera buscar empresas locales que acepten grandes cantidades de aceite industrial y establece un plan para aumentar gradualmente la cantidad que reciclas cada mes."
+                        android:textColor="#141713"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="325.7dp"
+                android:layout_height="172.43dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="39dp"
+                app:cardElevation="5dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="326dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardestre"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+
+                        android:id="@+id/textViewd"
+                        android:layout_width="260dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/merriweather_sans_bold"
+                        android:text="Consejo 4"
+                        android:textColor="#39932C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="-18dp"
+                        android:fontFamily="@font/merriweather_sans_bold"
+                        android:text="Recompensa: ¡Gracias por ser un agente de cambio!"
+                        android:textColor="#141713"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/merriweather_sans_light"
+                        android:text="Como recompensa, te obsequiamos con entradas gratuitas para el próximo evento Smart City Expo World Congress. ¡Esperamos que disfrutes de esta experiencia única!"
+                        android:textColor="#141713"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="395dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textesta">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAI"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#39932C"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Aceite Industrial"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Aceite de Cocina"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnBom"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Bombillas"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnLlantas"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:backgroundTint="#E9E7C9"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Llantas"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnPilBat"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Pilas y Baterias"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnEscombros"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Escombros"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnDesTex"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#E9E7C9"
+                android:fontFamily="@font/merriweather_sans_bold"
+                android:text="Desechos Textiles"
+                android:textAllCaps="false"
+                android:textColor="#2C2B2B"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/barnav"
+        style="@style/MyBottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backg"
+        app:itemIconTint="@drawable/fientecbarra"
+        app:itemTextColor="@drawable/fientecbarra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

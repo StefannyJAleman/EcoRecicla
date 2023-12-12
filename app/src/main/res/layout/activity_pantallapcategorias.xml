@@ -1,73 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F4F3DD"
-    tools:context=".menuscrollcomp">
+    tools:context="com.example.reto2.pantallapcategorias">
+
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="65dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/imgViewRecoU"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/perfil_2"
-        android:contentDescription="@string/imgViewRecoU"/>
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/perfil_2" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="152dp"
+        android:layout_marginBottom="69dp"
         android:fontFamily="@font/inter"
         android:text="@string/textViewRecoU"
         android:textColor="#39932C"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="80dp"
-        android:layout_marginTop="100dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:contentDescription="@string/imgViewLReco"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
-                app:srcCompat="@drawable/logo5_2"
-                tools:ignore="ImageContrastCheck" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/imgViewLReco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/logo5_2"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_gravity="center"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/inter"
         android:text="@string/textViewRecopuntos"
         android:textColor="#0F4002"
@@ -77,23 +69,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="322dp"
-                android:layout_height="27dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="56dp"
-                android:fontFamily="@font/merriweather_sans"
-                android:text="@string/textViewquieres"
-                android:textColor="#265144"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.179"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView5"
-                tools:ignore="TextSizeCheck" />
+    <!-- scrollview con las categorias -->
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="322dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/merriweather_sans"
+        android:text="@string/textViewquieres"
+        android:textColor="#265144"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="TextSizeCheck" />
 
+    <ScrollView
+
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#F4F3DD"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,8 +108,9 @@
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/categ_ai"
                     android:layout_width="160.41dp"
-                    android:layout_height="231.17dp"
+                    android:layout_height="210dp"
                     android:layout_marginStart="29dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="10dp"
@@ -112,7 +120,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-
                         android:orientation="vertical"
                         tools:ignore="UseCompoundDrawables">
 
@@ -127,10 +134,11 @@
                             android:id="@+id/textView11"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/inter"
                             android:text="@string/textViewAI"
+                            android:textAllCaps="false"
                             android:textColor="#265144"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -140,7 +148,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160.41dp"
-                    android:layout_height="231.17dp"
+                    android:layout_height="210dp"
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="10dp"
@@ -166,7 +174,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/inter"
                             android:text="@string/textViewAC"
                             android:textColor="#265144"
@@ -181,15 +189,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#F4F3DD"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160.41dp"
-                    android:layout_height="231.17dp"
+                    android:layout_height="210dp"
                     android:layout_marginStart="29dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp" >
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -209,8 +218,8 @@
                             android:id="@+id/textViewLL"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/inter"
                             android:text="@string/textViewllantas"
                             android:textColor="#265144"
@@ -221,14 +230,13 @@
                 </androidx.cardview.widget.CardView>
 
 
-
                 <androidx.cardview.widget.CardView
                     android:layout_width="160.41dp"
-                    android:layout_height="231.17dp"
+                    android:layout_height="210dp"
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp" >
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -248,8 +256,8 @@
                             android:id="@+id/textViewB"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/inter"
                             android:text="@string/textViewbombillas"
                             android:textColor="#265144"
@@ -268,7 +276,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160.41dp"
-                    android:layout_height="231.17dp"
+                    android:layout_height="210dp"
                     android:layout_marginStart="29dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="10dp"
@@ -293,7 +301,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/inter"
                             android:text="@string/textViewpyb"
                             android:textColor="#265144"
@@ -305,11 +313,11 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160.41dp"
-                    android:layout_height="231.17dp"
+                    android:layout_height="210dp"
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp" >
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -328,8 +336,8 @@
                             android:id="@+id/textViewE"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/inter"
                             android:text="@string/textViewescom"
                             android:textColor="#265144"
@@ -344,15 +352,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
                 android:orientation="horizontal">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="160.41dp"
-                    android:layout_height="231.17dp"
+                    android:layout_height="210dp"
                     android:layout_marginStart="29dp"
                     android:layout_marginTop="30dp"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp"  >
+                    app:cardElevation="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -372,10 +381,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
-                            android:layout_marginTop="10dp"
                             android:fontFamily="@font/inter"
-                            android:text="@string/textViewdtextiles"
                             android:padding="5dp"
+                            android:text="@string/textViewdtextiles"
                             android:textColor="#265144"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -393,53 +401,20 @@
 
     </ScrollView>
 
-    <LinearLayout
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/barnav"
+        style="@style/MyBottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:background="#7DC144"
-        android:orientation="horizontal"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backg"
+        app:itemIconTint="@drawable/fientecbarra"
+        app:itemTextColor="@drawable/fientecbarra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/Home"
-            android:layout_width="76dp"
-            android:layout_height="49dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/imgViewhomeB"
-            app:srcCompat="@drawable/vector"
-            tools:ignore="ImageContrastCheck" />
-
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="117dp"
-            android:layout_height="35dp"
-            android:contentDescription="@string/imgViewRecol"
-            app:srcCompat="@drawable/group_115"
-            tools:ignore="ImageContrastCheck" />
-
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="58dp"
-            android:layout_height="33dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/imgViewRecord"
-            app:srcCompat="@drawable/fa_solid_calculator__1_"
-            tools:ignore="ImageContrastCheck" />
-
-        <ImageView
-            android:id="@+id/iconoPerfilMenu"
-            android:layout_width="58dp"
-            android:layout_height="33dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/imgViewPerfil"
-            app:srcCompat="@drawable/vector_2"
-            tools:ignore="ImageContrastCheck" />
-
-    </LinearLayout>
+        app:menu="@menu/menu_bar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
