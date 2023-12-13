@@ -9,16 +9,6 @@
     tools:context="com.example.reto2.recoestadisticas">
 
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/estadis" />
-
     <TextView
         android:id="@+id/textesta"
         android:layout_width="395dp"
@@ -161,6 +151,20 @@
         </LinearLayout>
 
     </HorizontalScrollView>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="383dp"
+        android:layout_height="401dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/barnav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.246" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/barnav"

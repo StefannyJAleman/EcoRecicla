@@ -52,6 +52,8 @@ public class RecoCalcular extends BaseActivityR {
 
     Spinner materialSpinner;
     TableLayout tabla;
+
+    private RecoDataListener recoDataListener;
     private double valorTotal = 0.0;
 
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
@@ -186,6 +188,9 @@ public class RecoCalcular extends BaseActivityR {
                         }
 
                         saveDataToFile(dia, mes, material, cantidadlt, unidad, String.valueOf(valor));
+                        if (recoDataListener != null) {
+                            recoDataListener.onRecoDataAdded(material, (float) valor);
+                        }
                     } else {
                         requestStoragePermission();
                     }
@@ -209,8 +214,12 @@ public class RecoCalcular extends BaseActivityR {
     }
 }
 
+    public void setRecoDataListener(RecoDataListener listener) {
+        this.recoDataListener = listener;
+    }
+
     private void loadDataFromFile() {
-        File materialsFile = new File(getFilesDir(), "materials.txt");
+        File materialsFile = new File(getFilesDir(), "regismaterials.txt");
 
         if (materialsFile.exists()) {
             try {
@@ -251,7 +260,12 @@ public class RecoCalcular extends BaseActivityR {
             tvValorTotal.setText("$ " + String.valueOf(valorTotal));
         }
     }
-
+    private void agregarDatosAlGrafico(String material, float valor) {
+        // Lógica para agregar datos al gráfico
+        if (recoDataListener != null) {
+            recoDataListener.onRecoDataAdded(material, valor);
+        }
+    }
     //archivo txt
     private boolean checkStoragePermission() {
         return ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
@@ -267,10 +281,17 @@ public class RecoCalcular extends BaseActivityR {
 
 
     private void saveDataToFile(String dia, String mes, String material, String cantidadlt, String unidad, String valorlt) {
-        File materialsFile = new File(getFilesDir(), "materials.txt");
+        File regismaterialsFile = new File(getFilesDir(), "regismaterials.txt");
+
+        if (regismaterialsFile.exists()) {
+            String message = "El archivo existe en la ruta: " + regismaterialsFile.getAbsolutePath();
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "El archivo no existe", Toast.LENGTH_SHORT).show();
+        }
 
         try {
-            FileWriter writer = new FileWriter(materialsFile, true);
+            FileWriter writer = new FileWriter(regismaterialsFile, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             bufferedWriter.write(
                     dia + "," +
@@ -411,9 +432,9 @@ public class RecoCalcular extends BaseActivityR {
 
 
     private void removeFromFile(TableRow row) {
-        File materialsFile = new File(getFilesDir(), "materials.txt");
+        File regismaterialsFile = new File(getFilesDir(), "regismaterials.txt");
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(materialsFile));
+            BufferedReader reader = new BufferedReader(new FileReader(regismaterialsFile));
             List<String> lines = new ArrayList<>();
 
             String line;
@@ -436,7 +457,7 @@ public class RecoCalcular extends BaseActivityR {
 
             reader.close();
 
-            FileWriter writer = new FileWriter(materialsFile, false);
+            FileWriter writer = new FileWriter(regismaterialsFile, false);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             for (String newLine : lines) {
                 bufferedWriter.write(newLine);
